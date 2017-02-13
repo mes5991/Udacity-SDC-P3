@@ -1,7 +1,7 @@
 - [Udacity SDC Project 3 - Behavioral Cloning](#)
-  - [Model Architecture](#Model-Architecture)
-  - [Dataset collection and augmentation](#Dataset-collection-and-augmentation)
-  - [Training and Results](#Training-and-Results)
+  - [Model Architecture](#model-architecture)
+  - [Dataset collection and augmentation](#dataset-collection-and-augmentation)
+  - [Training and Results](#training-and-results)
 
 
 
@@ -42,7 +42,7 @@ model.add(Dense(10, activation='relu'))
 model.add(Dense(1, activation='linear'))
 ```
 
-##Dataset collection and augmentation
+##Dataset Collection and Augmentation
 Two sets of data were used for training. The first is the dataset provided by Udacity for this project. The second is an additional set of data collected with a USB steering wheel. For the second set, data was collected by both directions on track 1 in addition to some "recovery" driving where data is collected as the vehicle corrects its steering angle while close to the edge of the road. There are about 40,000 sets of images and steering angles between the two datasets. This data was collected and offered by [rggasoto](https://github.com/rggasoto/Udacity_P3).
 
 During training and testing I was having particular trouble with the vehicle driving straight too often, or not producing a high enough steering angle for some of the sharper turns. Additionally, the vehicle occasionally got the angle wrong entirely, and would turn right when the road went left. Two things helped me here: biasing the data away from 0 steering angles, and random data augmentation.
