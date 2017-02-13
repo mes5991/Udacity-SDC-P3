@@ -1,7 +1,7 @@
 - [Udacity SDC Project 3 - Behavioral Cloning](#)
-  - [Model Architecture](#Model Architecture)
-  - [Dataset collection and augmentation](#Dataset collection and augmentation)
-  - [Training and Results](#Training and Results)
+  - [Model Architecture](#Model-Architecture)
+  - [Dataset collection and augmentation](#Dataset-collection-and-augmentation)
+  - [Training and Results](#Training-and-Results)
 
 
 
@@ -11,7 +11,7 @@ In this project for Udacity's Self-Driving Car Nanodegree, [Nvidia's End to End 
 
 The goals / steps of the project were the following:
 * Use Udacity's simulator to collect data of good driving behavior
-* Build, a convolution neural network in Keras that predicts steering angles from images
+* Build, a convolutional neural network in Keras that predicts steering angles from images
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
