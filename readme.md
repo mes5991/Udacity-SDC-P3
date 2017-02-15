@@ -53,6 +53,23 @@ For data augmentation, I leaned heavily on [Vivek Yadav's super helpful post fro
 
 Having attempting training with and without the random data augmentation, I can say definitively that random data augmentation was the key to success for me in this project. I noticed an immediate improvement as soon as the random augmentation pipeline was implemented.
 
+###Dataset Exploration
+A brief exploration of the data was conducted. Below are a few examples of unaugmented images and corresponding steering angles in radians:
+
+![0.25](image_samples\unaugmented\Uncropped0 0.25.jpg)
+![0.0](image_samples\unaugmented\Uncropped7 0.0.jpg)
+![-0.11](image_samples\unaugmented\Uncropped17 -0.1150898.jpg)
+
+To get a better understanding of the data distribution, a histogram was created:
+
+![](image_samples\steering_angle_histogram.png)
+
+Finally, below are a few images after being processed through the random data augmentation flow:
+
+![0.32](image_samples\augmented\Augmented0 0.327484946995502.jpg) ![-0.08](image_samples\augmented\Augmented1 -0.08547827518981554.jpg) ![0.42](image_samples\augmented\Augmented2 0.42431273714127227.jpg) ![-0.29](image_samples\augmented\Augmented3 -0.28811980295049017.jpg)
+![0.10](image_samples\augmented\Augmented4 0.09790988890966729.jpg) ![0.11](image_samples\augmented\Augmented5 0.11489151703472816.jpg)
+
+
 ##Training and Results
 As I mentioned above, when using the raw images without any data augmentation techniques, I was having a lot of trouble with the vehicle driving straight off the track. One particular area of trouble was the area immediately after the bridge, where the sharpest curve is.
 

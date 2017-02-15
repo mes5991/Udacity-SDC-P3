@@ -5,6 +5,7 @@ import csv
 from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 import random
+import matplotlib.pyplot as plt
 
 def augment_brightness(img):
     img = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
@@ -89,3 +90,17 @@ def display_image(img):
     cv2.imshow('img', img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+def save_images(X_train, y_train):
+    for i in range(20):
+        rand = int(np.random.choice(np.arange(len(X_train)), 1))
+        img = cv2.imread(X_train[rand])
+        img, angle = image_augmentation_flow(img, y_train[rand])
+        path = "Augmented" + str(i) + " " + str(angle) + ".jpg"
+        cv2.imwrite(path, img)
+
+def histogram(values, bins):
+    plt.hist(values, bins=bins)
+    plt.grid()
+    plt.title("Histogram of unmodified steering angles")
+    plt.show()
