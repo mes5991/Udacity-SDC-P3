@@ -1,7 +1,7 @@
 - [Udacity SDC Project 3 - Behavioral Cloning](#)
   - [Model Architecture](#model-architecture)
   - [Dataset collection and augmentation](#dataset-collection-and-augmentation)
-    -[Dataset Exploration](#dataset-exploration)
+    - [Dataset Exploration](#dataset-exploration)
   - [Training and Results](#training-and-results)
 
 
@@ -60,6 +60,7 @@ A brief exploration of the data was conducted. Below are a few examples of unaug
 ![0.25](image_samples/unaugmented/Uncropped0 0.25.jpg)
 ![0.0](image_samples/unaugmented/Uncropped7 0.0.jpg)
 ![-0.11](image_samples/unaugmented/Uncropped17 -0.1150898.jpg)
+![0.0](image_samples/unaugmented/Uncropped15 0.0.jpg)
 
 To get a better understanding of the data distribution, a histogram was created:
 
@@ -69,6 +70,10 @@ Finally, below are a few images after being processed through the random data au
 
 ![0.32](image_samples/augmented/Augmented0 0.327484946995502.jpg) ![-0.08](image_samples/augmented/Augmented1 -0.08547827518981554.jpg) ![0.42](image_samples/augmented/Augmented2 0.42431273714127227.jpg) ![-0.29](image_samples/augmented/Augmented3 -0.28811980295049017.jpg)
 ![0.10](image_samples/augmented/Augmented4 0.09790988890966729.jpg) ![0.11](image_samples/augmented/Augmented5 0.11489151703472816.jpg)
+![0.17](image_samples/augmented/Augmented6 0.17377072788444275.jpg) ![-0.16](image_samples/augmented/Augmented7 -0.16365556244033483.jpg)
+![0.35](image_samples/augmented/Augmented8 0.3598557233308122.jpg) ![-0.13](image_samples/augmented/Augmented8 0.3598557233308122.jpg)
+![-0.07](image_samples/augmented/Augmented10 -0.07827767818892231.jpg) ![-0.11](image_samples/augmented/Augmented11 -0.1168833019925592.jpg)
+
 
 
 ##Training and Results
