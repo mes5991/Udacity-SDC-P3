@@ -6,7 +6,7 @@
 
 
 
-#Udacity SDC Project 3 - Behavioral Cloning
+# Udacity SDC Project 3 - Behavioral Cloning
 
 In this project for Udacity's Self-Driving Car Nanodegree, [Nvidia's End to End Learning for Self-Driving Cars architecture](https://arxiv.org/pdf/1604.07316v1.pdf) was implemented in Keras. Data was collected from Udacity's SDC simulator and used to train a model that was then utilized to predict steering angles for autonomous driving!
 
@@ -17,7 +17,7 @@ The goals / steps of the project were the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
-##Model Architecture
+## Model Architecture
 
 As suggested by Udacity and many others, Nvidia's end to end learning architecture was utilized for this project. This CNN was designed for this specific problem and has a history of success, so it seemed logical to implement this method. From Nvidia's paper, the CNN is structured as follows:
 
@@ -43,7 +43,7 @@ model.add(Dense(10, activation='relu'))
 model.add(Dense(1, activation='linear'))
 ```
 
-##Dataset Collection and Augmentation
+## Dataset Collection and Augmentation
 Two sets of data were used for training. The first is the dataset provided by Udacity for this project. The second is an additional set of data collected with a USB steering wheel. For the second set, data was collected by both directions on track 1 in addition to some "recovery" driving where data is collected as the vehicle corrects its steering angle while close to the edge of the road. There are about 40,000 sets of images and steering angles between the two datasets. This data was collected and offered by [rggasoto](https://github.com/rggasoto/Udacity_P3).
 
 During training and testing I was having particular trouble with the vehicle driving straight too often, or not producing a high enough steering angle for some of the sharper turns. Additionally, the vehicle occasionally got the angle wrong entirely, and would turn right when the road went left. Two things helped me here: biasing the data away from 0 steering angles, and random data augmentation.
@@ -54,10 +54,10 @@ For data augmentation, I leaned heavily on [Vivek Yadav's super helpful post fro
 
 Having attempting training with and without the random data augmentation, I can say definitively that random data augmentation was the key to success for me in this project. I noticed an immediate improvement as soon as the random augmentation pipeline was implemented.
 
-###Dataset Exploration
+### Dataset Exploration
 A brief exploration of the data was conducted. Below are a few examples of unaugmented images and corresponding steering angles in radians (hover to see steering angle):
 
-![0.25](image_samples/unaugmented/Uncropped0 0.25.jpg "0.25")
+![0.25]("image_samples/unaugmented/Uncropped0 0.25.jpg "0.25"")
 ![0.0](image_samples/unaugmented/Uncropped7 0.0.jpg "0.0")
 ![-0.11](image_samples/unaugmented/Uncropped17 -0.1150898.jpg "-0.11")
 ![0.0](image_samples/unaugmented/Uncropped15 0.0.jpg "0.0")
@@ -76,7 +76,7 @@ Finally, below are a few images after being processed through the random data au
 
 
 
-##Training and Results
+## Training and Results
 As I mentioned above, when using the raw images without any data augmentation techniques, I was having a lot of trouble with the vehicle driving straight off the track. One particular area of trouble was the area immediately after the bridge, where the sharpest curve is.
 
 After implementing data augmentation I had immediate success on the first track after training on just 1 epoch of 20,000 images, with a batch size of 128. Additionally, this model performs well on the second track at the lowest resolution (without shading and shadows). When shadows are introduced, the vehicle fails to drive past the first turn of the second track. I am sure that including random shadows to my data augmentation pipeline as noted in Vivek's post in addition to running more epochs will solve this issue and further generalize the model.
