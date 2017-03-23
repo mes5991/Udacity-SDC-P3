@@ -68,11 +68,11 @@ To get a better understanding of the data distribution, a histogram was created:
 
 Finally, below are a few images after being processed through the random data augmentation flow (hover to see steering angle):
 
-![0.32](image_samples/augmented/Augmented0 0.327484946995502.jpg "0.32") ![-0.08](image_samples/augmented/Augmented1 -0.08547827518981554.jpg "-0.08") ![0.42](image_samples/augmented/Augmented2 0.42431273714127227.jpg "0.42") ![-0.29](image_samples/augmented/Augmented3 -0.28811980295049017.jpg "-0.29")
-![0.10](image_samples/augmented/Augmented4 0.09790988890966729.jpg "0.10") ![0.11](image_samples/augmented/Augmented5 0.11489151703472816.jpg "0.11")
-![0.17](image_samples/augmented/Augmented6 0.17377072788444275.jpg "0.17") ![-0.16](image_samples/augmented/Augmented7 -0.16365556244033483.jpg "-0.16")
-![0.35](image_samples/augmented/Augmented8 0.3598557233308122.jpg "0.35") ![-0.13](image_samples/augmented/Augmented8 0.3598557233308122.jpg "-0.13")
-![-0.07](image_samples/augmented/Augmented10 -0.07827767818892231.jpg "-0.07") ![-0.11](image_samples/augmented/Augmented11 -0.1168833019925592.jpg "-0.11")
+![0.32](image_samples/augmented/Augmented0_0.327484946995502.jpg "0.32") ![-0.08](image_samples/augmented/Augmented1_-0.08547827518981554.jpg "-0.08") ![0.42](image_samples/augmented/Augmented2_0.42431273714127227.jpg "0.42") ![-0.29](image_samples/augmented/Augmented3_-0.28811980295049017.jpg "-0.29")
+![0.10](image_samples/augmented/Augmented4_0.09790988890966729.jpg "0.10") ![0.11](image_samples/augmented/Augmented5_0.11489151703472816.jpg "0.11")
+![0.17](image_samples/augmented/Augmented6_0.17377072788444275.jpg "0.17") ![-0.16](image_samples/augmented/Augmented7_-0.16365556244033483.jpg "-0.16")
+![0.35](image_samples/augmented/Augmented8_0.3598557233308122.jpg "0.35") ![-0.13](image_samples/augmented/Augmented8_0.3598557233308122.jpg "-0.13")
+![-0.07](image_samples/augmented/Augmented10_-0.07827767818892231.jpg "-0.07") ![-0.11](image_samples/augmented/Augmented11_-0.1168833019925592.jpg "-0.11")
 
 
 
