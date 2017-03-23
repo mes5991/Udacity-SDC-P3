@@ -57,7 +57,7 @@ Having attempting training with and without the random data augmentation, I can 
 ### Dataset Exploration
 A brief exploration of the data was conducted. Below are a few examples of unaugmented images and corresponding steering angles in radians (hover to see steering angle):
 
-![0.25]("image_samples/unaugmented/Uncropped0 0.25.jpg "0.25"")
+![0.25]("image_samples/unaugmented/Uncropped0 0.25.jpg" "0.25")
 ![0.0](image_samples/unaugmented/Uncropped7 0.0.jpg "0.0")
 ![-0.11](image_samples/unaugmented/Uncropped17 -0.1150898.jpg "-0.11")
 ![0.0](image_samples/unaugmented/Uncropped15 0.0.jpg "0.0")
